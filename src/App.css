@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: red;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,4 +19,113 @@
 
 .App-link {
   color: #09d3ac;
+}
+.btn-dark {
+  color: beige;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-success {
+  padding: 10px;
+  margin: 10;
+  color: black;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.15rem;
+  font-weight: 1000;
+  line-height: 1.2;
+}
+element.style {
+ color: black;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid black;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid black;
+}
+.table td, .table th {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid black;
+}
+
+$arrowColor: #fff;
+$baseColor: #000;
+$textColor: #000;
+
+body{
+  padding: 2em;
+}
+
+.styled-select{
+  background: #f2f2f2;
+  border-radius: .2em;
+  border: 1px solid $baseColor;
+  box-sizing: border-box;
+  box-shadow: 0 0 .2em .1em #ccc;
+  display: inline-block;
+  max-width: 10em;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+select{
+  appearance: none;
+  box-shadow: 0 0 .2em .1em #ccc inset;
+  background: transparent;
+  border: 0;
+  color: $textColor;
+  cursor: pointer;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  padding: .5em 2em .5em .5em;
+  width: 100%;
+}
+&:before, &:after{
+             content: '';
+             pointer-events: none;
+             position: absolute;
+           }
+&:before{ /* Right button */
+   background: lighten( $baseColor, 20% );
+   box-shadow: 0 0 1em .3em $baseColor inset;
+   height: 100%;
+   right: 0;
+   top: 0;
+   width: 2em;
+ }
+&:after{ /* Arrow icon */
+   border-top: .4em solid $arrowColor;
+   border-left: .4em solid transparent;
+   border-right: .4em solid transparent;
+   height: 0;
+   position: absolute;
+   right: 1em;
+   top: 50%;
+   transform: translate(50%, -50%);
+   transition: top .25s;
+   width: 0;
+ }
+
+/* Sprinkle some fun */
+&:hover{
+&:before{
+   background: $baseColor;
+ }
+&:after{
+   top: 60%;
+   transition: top .100s;
+ }
+}
 }

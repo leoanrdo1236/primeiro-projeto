@@ -39,9 +39,9 @@ if (name==="natalia") {
 
 function ShoppingList(props) {
   return <div className="shppig-List">
-    <center>
+
     <h1>shppig List</h1>
-    </center>
+
     
     <ul>
     
